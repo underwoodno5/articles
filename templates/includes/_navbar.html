@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a class="navbar-brand" href="#">Some words</a>
+  <a class="navbar-brand" href="#">Some Words</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -14,29 +14,32 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/"
-          >Home <span class="sr-only">(current)</span></a
-        >
-      </li>
+      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
       <li class="nav-item">
-        <a class="nav-link " href="/articles">Articles</a>
+        <a class="nav-link" href="/articles">Articles</a>
       </li>
     </ul>
-
-    <ul class="navbar-nav navbar-right">
-      {% if session.logged_in %}
-      <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="/dashboard">Dashboard</a>
-      </li>
-      {% else %}
-      <li class="nav-item">
-        <a class="nav-link" href="/register">Register</a>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-      {% endif %}
-    </ul>
+    {% if session.logged_in %}
+    <a class="p-2 text-dark" href="/logout">Logout</a>
+    <a class="p-2 text-dark" href="/dashboard">Dashboard</a> {% else %}
+    <a class="p-2 text-dark" href="/register">Register</a>
+    <a class="nav-link" href="/login">Login</a> {% endif %}
   </div>
 </nav>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script>
+  window.jQuery ||
+    document.write(
+      '<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>'
+    );</script
+><script
+  src="/docs/4.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
+  crossorigin="anonymous"
+></script>
