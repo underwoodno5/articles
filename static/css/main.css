@@ -76,12 +76,12 @@ small {
   #article .article-body {
     padding: 0 3rem;
   }
-}
 
-.head-container p {
-  padding-right: 0rem;
-  max-height: 16rem;
-  overflow: hidden;
+  .head-container p {
+    padding-right: 0rem;
+    max-height: 16rem;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 425px) {
