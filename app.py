@@ -7,6 +7,8 @@ from functools import wraps
 
 
 app = Flask(__name__)
+app.secret_key='secret123'
+
 
 # Config MySQL
 app.config['MYSQL_HOST'] = 'us-cdbr-iron-east-01.cleardb.net'
@@ -295,5 +297,4 @@ def delete_article(id):
 
 
 if __name__ == '__main__':
-    app.secret_key='secret123'
     app.run(debug=True)
