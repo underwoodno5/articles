@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
   <a class="navbar-brand" href="#">Articles</a>
   <button
     class="navbar-toggler"
@@ -23,6 +23,20 @@
       <li class="nav-item">
         <a class="nav-link " href="/articles">Articles</a>
       </li>
+    </ul>
+
+    <ul class="navbar-nav navbar-right">
+      {% if session.logged_in %}
+      <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Register</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+      {% endif %}
     </ul>
   </div>
 </nav>

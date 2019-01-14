@@ -1,3 +1,47 @@
 .navbar {
   margin-bottom: 2rem;
 }
+
+.head-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.head-container img {
+  max-width: 100%;
+}
+
+.head-container h1 {
+  margin-top: 2rem;
+}
+.left-container {
+  overflow: hidden;
+}
+.head-container p {
+  padding-right: 3rem;
+  max-height: 16rem;
+  overflow: hidden;
+}
+
+.article-link {
+  float: right;
+  margin-right: 2rem;
+}
+
+.article-list {
+  width: 30rem;
+}
+
+#article h1,
+small {
+  text-align: center;
+  display: block;
+}
+
+#article .article-body {
+  padding: 0 11rem;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin-top: 3rem;
+}
